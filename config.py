@@ -7,22 +7,22 @@ from pyrogram import filters
 load_dotenv()
 
 # Get this value from my.telegram.org/apps
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("API_ID", "27896987"))
+API_HASH = getenv("API_HASH", "0e017f716c49a52a0ba4a8bfa95ccaf7")
 
 # Get your token from @BotFather on Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("BOT_TOKEN", "7223926558:AAH-0Z2AIcyI6W3g8F-SuV06gBMzc07G_xM")
 
 # Get your mongo url from cloud.mongodb.com
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://asmit9831:plmokn123@cluster0.1xdv6mh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 60))
 
 # Chat id of a group for logging bot's activities
-LOGGER_ID = int(getenv("LOGGER_ID", None))
+LOGGER_ID = int(getenv("LOGGER_ID", "-1002175335764"))
 
 # Get this value from @FallenxBot on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", 1356469075))
+OWNER_ID = int(getenv("OWNER_ID", 7067559685))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
@@ -39,8 +39,8 @@ GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/FallenAssociation")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/DevilsHeavenMF")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/Matrixx_official")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/Matrixx_official")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
@@ -63,7 +63,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 1073741824))
 
 # Get your pyrogram v2 session from @StringFatherBot on Telegram
 STRING1 = getenv("STRING_SESSION", None)
-STRING2 = getenv("STRING_SESSION2", None)
+STRING2 = getenv("STRING_SESSION2", "BQGprJsAwjsisILI3vBz3DBS-KTwOMCng0zNCOBk0yxMrwTtr2R5SU7KxIwsAARmScoIH7ZQWO57v1be7-o9-jRlJnvr26cHcRRleknVIJb0hOBqeAhDhiWg1cm8CFbLqkVdccfWvQkwGswoX0lBbt-_ptnjaM4JGDJVfQn0zpxQv9B5KmlGu3S3OnAOEyl8gFQbaS4PpTt1CPa-SrJjvEKRcaS7PMTVCQ_SHDIe8rOi_MA5a5oa8Br_IBpeSNU5WO1GiX1FH72NkdQNdVZjHBr8V68Ag97fhiSDdWF61QK-zcZ7tW5F8kr2KXpSwLYQJu964sXDLW-qfHjnPtAFoshZecIp5gAAAAGlQmcFAA")
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
 STRING5 = getenv("STRING_SESSION5", None)
